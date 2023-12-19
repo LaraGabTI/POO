@@ -24,5 +24,6 @@ class Aluno(Pessoa):
     pass
 
 paulo = Professor('Paulo Junior', 29, 1400.00, 'Backend', 1234567890)
-
+lara = Professor('Lara', 22, 1500, 'Matematica', 8252918360)
 print(paulo) #chamado assim por conta da funcao string
+print(lara)
