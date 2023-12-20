@@ -1,0 +1,2 @@
+#Entidade = objeto
+#
