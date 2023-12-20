@@ -31,8 +31,7 @@ class Aluno(Pessoa):
     
     def get_notas(self):
         return self.notasGeral
-
-    
+  
     def __str__(self):  #funcao que imprime tudo
         return f'Nome: { self.nome }, Idade: { self.idade } e CPF: { self.get_cpf() } notas Getal: { self.notasGeral} .'
 
