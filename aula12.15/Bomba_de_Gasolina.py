@@ -16,6 +16,12 @@ class BombaGasolina:
         print(f'O valor da gasolina eh {self.valorLitro_gas}')
         print(f'O valor da alcool eh {self.valorLitro_alcool}')
 
+    def get_valorLitro_gas(self):
+        return self.valorLitro_gas
+
+    def set_valorLitro_gas(self, novo_valor_gas):
+        self.valorLitro_gas = self.novo_valor_gas
+
     def escolha(self, tipoCombustivel):
         self.tipoCombustivel = input("Digite A para Alcool e G para gasolina")
         if self.tipoCombustivel == 'A':
@@ -28,13 +34,8 @@ class BombaGasolina:
 class Alcool(BombaGasolina):
     def __init__(self, qtdd_Combustivel):
         super().__init__(qtdd_Combustivel)
-        
-           
-    def get_valorLitro_gas(self):
-        return self.valorLitro_gas
-
-    def set_valorLitro_gas(self, novo_valor_gas):
-        self.valorLitro_gas = self.novo_valor_gas
+              
+    
     
     def valorPago(self, valorLitro, qnttCombustivel):
         return self.qnttCombustivel * valorLitro
@@ -50,3 +51,4 @@ class Gasolina(BombaGasolina):
     pass
 
 
+lara = BombaGasolina(10)
